@@ -1,16 +1,21 @@
 package oop_113652_GeradFedorian.week01
 
-fun main(){
+fun main() {
     val gameTitle: String = "Valorant"
-    var price: Int = 300000
+    val price: Int = 700000
 
-    val discount = calculateDiscount(price)
+    val finalPrice = calculateDiscount(price)
+    printReceipt(gameTitle, finalPrice)
 }
 
 fun calculateDiscount(price: Int): Int {
     return if (price > 500000) {
-        price * 20 / 100
+        price - (price * 20 / 100)
     } else {
-        price * 10 / 100
+        price - (price * 10 / 100)
     }
+}
+
+fun printReceipt(title: String, finalPrice: Int) {
+    println("$title, final price: $finalPrice")
 }
