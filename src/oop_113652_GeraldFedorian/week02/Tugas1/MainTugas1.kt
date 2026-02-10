@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian.week02
+package oop_113652_GeraldFedorian.week02.Tugas1
 
 import java.util.Scanner
 
@@ -16,6 +16,14 @@ fun main(){
     scanner.nextLine()
 
     print("Pilih Durasi Loan: ")
-    val loanDuration = scanner.nextInt()
+    var loanDuration = scanner.nextInt()
     scanner.nextLine()
+
+    if (loanDuration < 0 ){
+        loanDuration = 1;
+        val l1 = Loan(bookTitle, borrower, loanDuration)
+    } else {
+        val l1 = Loan(bookTitle, borrower, loanDuration)
+    }
+
 }

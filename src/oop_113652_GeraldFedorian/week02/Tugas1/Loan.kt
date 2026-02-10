@@ -12,4 +12,11 @@ class Loan(
             return 0
         }
     }
+
+    init {
+        println("Book Title: $bookTitle")
+        println("Nama: $borrower")
+        println("Total denda: ${calculateFine(loanDuration)}")
+    }
+
 }
