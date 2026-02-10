@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian_week02
+package oop_113652_GeraldFedorian.week02
 
 class Student(
     val name:String,
