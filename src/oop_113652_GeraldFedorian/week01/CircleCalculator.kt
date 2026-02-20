@@ -1,4 +1,4 @@
-package oop_113652_GeradFedorian.week01
+package oop_113652_GeraldFedorian.week01
 
 fun main() {
     val radius = 7.0
