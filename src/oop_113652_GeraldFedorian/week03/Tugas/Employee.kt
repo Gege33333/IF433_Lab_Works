@@ -1,6 +1,6 @@
 package oop_113652_GeraldFedorian.week03.Tugas
 
-class Employee {
+class Employee(val name: String) {
     var salary: Int = 0
         set(value) {
             if(value <0){
