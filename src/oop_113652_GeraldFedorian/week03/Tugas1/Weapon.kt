@@ -1,14 +1,15 @@
 package oop_113652_GeraldFedorian.week03.Tugas1
 
-class Weapon(name: String, damage: Int) {
-    var damage: Int = damage
+class Weapon(var name: String) {
+    var damage: Int = 0
         set(value){
             if(value<0){
                 println("Damage tidak boleh negatif")
-                return
+
             }
             else if (value > 1000){
                 println("Damage terlalu besar")
+                field = 1000
             } else{
                 value
             }
