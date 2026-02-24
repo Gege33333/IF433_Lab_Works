@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian.week04.LatihanTerbimbing
+package oop_113652_GeraldFedorian.week04.Tugas
 
 fun main(){
     println("---Testing Vehicle---")
