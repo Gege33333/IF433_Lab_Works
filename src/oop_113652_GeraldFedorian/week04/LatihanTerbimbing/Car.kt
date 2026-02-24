@@ -1,0 +1,7 @@
+package oop_113652_GeraldFedorian.week04.LatihanTerbimbing
+
+open class Car (brand: String, val numberOfDoors: Int): Vehicle(brand){
+    fun opemTrunk(){
+        println("Bagasi Mobil $brand dengan $numberOfDoors pintu dibuka")
+    }
+}
