@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian.week06.LatihanTerbimbing4
+package oop_113652_GeraldFedorian.week06.LatihanTerbimbing
 
 class Gopay: PaymentMethod {
     override fun pay(amount: Double) {

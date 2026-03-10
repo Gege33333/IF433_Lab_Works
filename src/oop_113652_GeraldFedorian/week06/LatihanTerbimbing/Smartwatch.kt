@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian.week06.LatihanTerbimbing2
+package oop_113652_GeraldFedorian.week06.LatihanTerbimbing
 
 class Smartwatch: Watch(), BluetoothConnectable, Rechargeable {
     override fun showTime() {

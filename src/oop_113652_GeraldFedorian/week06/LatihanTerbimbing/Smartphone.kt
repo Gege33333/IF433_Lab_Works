@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian.week06.LatihanTerbimbing3
+package oop_113652_GeraldFedorian.week06.LatihanTerbimbing
 
 class Smartphone: Camera, Phone {
     override fun tunrOn() {
