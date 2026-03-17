@@ -16,4 +16,20 @@ fun main() {
     println("Damage: ${starterWeapon.item.damage}")
     println("Rarity: ${starterWeapon.item.rarity}")
     println("Durability: ${starterWeapon.durability}")
+
+    println("\n=== BLACKSMITH UPGRADE ===")
+
+    val upgradedItem = starterWeapon.item.copy(damage = 25)
+
+    println("Senjata setelah upgrade:")
+    println("Nama: ${upgradedItem.name}")
+    println("Damage: ${upgradedItem.damage}")
+    println("Rarity: ${upgradedItem.rarity}")
+
+    println("\n=== SIMULASI EVENT ===")
+
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+    processEvent(BattleState.LootDropped(upgradedItem))
+    processEvent(BattleState.GameOver("Terkena jebakan racun"))
 }
