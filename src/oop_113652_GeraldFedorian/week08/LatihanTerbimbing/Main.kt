@@ -1,5 +1,7 @@
 package oop_113652_GeraldFedorian.week08.LatihanTerbimbing
 
+import java.util.SimpleTimeZone
+
 fun main(){
     println("=== TEST SAFE CALLS & ELVIS ===")
     val emptyOrder = Order(null, null)
@@ -25,4 +27,12 @@ fun main(){
         "Laptop",
         4500000.0
     )
+
+    for(item in mixedData){
+        val text = item as? String
+
+        text?.let{
+            println("Ditemukan teks: ${it.uppercase()}")
+        }
+    }
 }
