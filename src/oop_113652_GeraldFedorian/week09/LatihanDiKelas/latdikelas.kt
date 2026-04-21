@@ -26,4 +26,17 @@ fun main(){
     //view hasil
     println(arAngka)
 
+
+    println("==== SET OF ====")
+    var arUrutan = setOf(20,30,40,20,70,30,10,100)
+    println(arUrutan.size)
+    println(arUrutan)
+    println("ada angka 40 ga?" + arUrutan.contains(40))
+
+    println("=== MUTABLE SET OF ===")
+    var arMakanan = mutableSetOf("Nasi", "Bakpau", "Mie", "Ayam", "Ayam lagi")
+    arMakanan.add("Ketoprak")
+    arMakanan.add("Mie")
+    arMakanan.remove("Nasi")
+    println(arMakanan)
 }

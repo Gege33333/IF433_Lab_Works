@@ -1,4 +1,4 @@
-package oop_113652_GeraldFedorian.week09.LatihanTerbimbing2
+package oop_113652_GeraldFedorian.week09.LatihanTerbimbing
 
 fun main(){
     println("=== TEST LAMBDA ===")
