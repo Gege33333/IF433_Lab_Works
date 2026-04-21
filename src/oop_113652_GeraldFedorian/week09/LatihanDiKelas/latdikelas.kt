@@ -41,5 +41,24 @@ fun main(){
     println(arMakanan)
 
     println("==== MAP OF ===")
-    var
+    println("\n========= MAP OF =========")
+    var arSiswa = mapOf(
+        "Andi" to 89,
+        "Toni" to 73,
+        "Ivander" to 90
+    )
+    println("banyak data siswa: ${arSiswa.size}")
+    println("Nilai si Andi " + arSiswa["Andi"])
+    println("semua keys: " + arSiswa.keys)
+    println("semua values: " + arSiswa.values)
+    println(arSiswa.keys.elementAt(1))
+    println(arSiswa)
+
+    println("\n========= MUTABLE MAP =========")
+    var arMenu = mutableMapOf(
+        "Nasi" to 1000,
+        "Ayam" to 2000,
+        "Sayur asem" to 1500
+    )
+    println("Banyak menu")
 }
