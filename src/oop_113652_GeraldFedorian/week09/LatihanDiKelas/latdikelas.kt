@@ -39,4 +39,7 @@ fun main(){
     arMakanan.add("Mie")
     arMakanan.remove("Nasi")
     println(arMakanan)
+
+    println("==== MAP OF ===")
+    var
 }
