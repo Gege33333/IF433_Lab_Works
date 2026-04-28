@@ -1,9 +1,5 @@
 package oop_113652_GeraldFedorian.week10.LatihanTerbimbing
 
-fun <T> printData(data: T) {
-    println("Data yang diterima: $data")
-}
-
 fun main() {
     println("=== TEST GENERIC CLASS ===")
     val intBox = Box(100)
@@ -11,4 +7,8 @@ fun main() {
 
     println("Isi intBox: ${intBox.value}")
     println("Isi stringBox: ${stringBox.value}")
+
+    println("\n=== TEST MULTIPLE PARAMETERS ===")
+    val itemPrice = PairBox("Bitcoin", 65000)
+    println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value} USD")
 }
