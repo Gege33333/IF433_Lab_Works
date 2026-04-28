@@ -65,4 +65,24 @@ fun main(){
     arMenu.remove("Ayam")
     arMenu.put("Udang", 2300)
     println(arMenu)
+
+    println("\n========= LAMBDA =========")
+    fun tambah(a: Int, b: Int): Int {
+        return a+b
+    }
+    var kurang = {a: Int, b: Int -> a-b}
+
+    println("Kurang-kurangan: ${kurang(5, 3)}")
+    println("Tambah-tambahan: ${tambah(5, 3)}")
+
+    println("\n========= IMPLICIT IT =========")
+    var hitungPangkat:(Int) -> Int = {it * it}
+    println("Pangkat " + hitungPangkat(5))
+
+    arSiswa.forEach {
+            siswa -> println(siswa)
+    }
+    for(sis in arSiswa) {
+        println(sis)
+    }
 }
