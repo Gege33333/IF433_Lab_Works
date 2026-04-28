@@ -1,6 +1,8 @@
 package oop_113652_GeraldFedorian.week10.LatihanTerbimbing
 
-import sun.management.MemoryUsageCompositeData.getMax
+fun <T> getMax(a: T, b: T): T where T : Comparable<T> {
+    return if (a > b) a else b
+}
 
 fun main() {
     println("=== TEST GENERIC CLASS ===")
@@ -24,3 +26,4 @@ fun main() {
     println("Total: ${math.sum()}")
     println("Terbesar: ${getMax(45, 90)}")
 }
+
